@@ -1,0 +1,48 @@
+:root {
+  --base-body-bg: #23252c;
+  --base-card-bg: #1a1b21;
+  --base-footer-bg: #161619;
+  --heading-color: #ffffff;
+  --sub-heading-color: #f3bf99;
+  --headline-color: #f5f5f5;
+  --baseline-color: #dcdcdc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--base-body-bg);
+}
+
+.card {
+  border-radius: 6px;
+  overflow: hidden;
+
+  min-width: 317px;
+  max-width: 417px;
+  margin: 2.33em auto;
+  background-color: var(--base-card-bg);
+}
+
+.img-container {
+  position: relative;
+}
+
+.cover {
+  height: 317px;
+  object-position: -60px;
+}
+
+.cover-overlay {
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.007);
+}
