@@ -85,6 +85,11 @@ main > .facts {
 
 .facts > li {
   line-height: 1.333rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.facts > li::marker {
+  color: var(--cool-blue);
+  font-size: 1.333rem;
 }
