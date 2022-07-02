@@ -15,11 +15,17 @@
 }
 
 body {
+  height: 100vh;
   margin: 0;
   padding: 0;
   background-color: var(--sesame);
   color: var(--ash-white);
   font-family: 'Inter', sans-serif;
+
+  background-image: url('./large-icon.svg');
+  background-repeat: no-repeat;
+  background-position: right 75%;
+  background-size: 15rem;
 }
 
 nav {
@@ -65,7 +71,7 @@ nav > .container {
   font-weight: var(--font-semi);
 }
 
-main {
+main > .container {
   max-width: 1080px;
   margin-left: auto;
   margin-right: auto;
