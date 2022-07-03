@@ -52,7 +52,6 @@ body {
 }
 
 .body-container {
-
   padding: 0 2em;
 }
 
@@ -69,6 +68,7 @@ body {
 }
 
 .info {
+  overflow: hidden;
   margin: 1.33em 0;
 }
 
@@ -118,6 +118,7 @@ body {
 }
 
 .description {
+  overflow: hidden;
   margin: 1.33em 0;
   color: var(--baseline-color);
 }
@@ -127,5 +128,6 @@ body {
 }
 
 .context {
+  line-height: 1.8em;
   color: var(--baseline-color);
 }
