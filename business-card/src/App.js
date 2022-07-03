@@ -3,6 +3,7 @@ import React from 'react'
 import Info from './components/Info'
 import About from './components/About'
 import Interests from './components/Interests'
+import Footer from './components/Footer'
 
 import avatar from './assets/avatar.jpg'
 
@@ -20,6 +21,9 @@ export default function App() {
             <About />
             <Interests />
           </div>
+        </div>
+        <div className='footer-container'>
+          <Footer/>
         </div>
       </div>
     </main>
