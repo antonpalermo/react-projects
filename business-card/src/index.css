@@ -52,12 +52,13 @@ body {
 }
 
 .body-container {
-  text-align: center;
+
   padding: 0 2em;
 }
 
 .info-container {
   overflow: hidden;
+  text-align: center;
   color: var(--heading-color);
 }
 
@@ -114,4 +115,17 @@ body {
 .btn > img {
   margin-right: 10px;
   transform: scale(1.5);
+}
+
+.description {
+  margin: 1.33em 0;
+  color: var(--baseline-color);
+}
+
+.headline {
+  color: var(--heading-color);
+}
+
+.context {
+  color: var(--baseline-color);
 }
