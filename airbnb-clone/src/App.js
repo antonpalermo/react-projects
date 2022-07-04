@@ -10,13 +10,7 @@ export default function App() {
   const offers = data.map(detail => (
     <Card
       key={detail.id}
-      title={detail.title}
-      img={detail.coverImg}
-      rating={detail.stats.rating}
-      reviewCount={detail.stats.reviewCount}
-      price={detail.price}
-      location={detail.location}
-      openSpots={detail.openSpots}
+      content={detail}
     />
   ))
 
