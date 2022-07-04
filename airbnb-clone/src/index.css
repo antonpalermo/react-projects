@@ -16,8 +16,45 @@ nav > .container {
   height: 100%;
   display: flex;
 
-  padding: 22px;
+  padding: 22px 0;
 
   max-width: 1280px;
   margin: 0 auto;
+}
+
+.hero-section {
+  max-width: 1280px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 2.33em 0;
+}
+
+.photo__grid {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.hero__tagline__container {
+  overflow: hidden;
+}
+
+.hero__tagline__container > p {
+  width: 320px;
+}
+
+@media screen and (max-width: 500px) {
+  nav > .container {
+    padding: 22px;
+  }
+
+  .hero-section {
+    padding: 0 22px;
+    margin: 1.98em auto;
+    overflow: hidden;
+  }
+
+  .photo__grid {
+    width: 80%;
+  }
 }
