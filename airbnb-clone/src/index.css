@@ -54,6 +54,7 @@ nav > .container {
   justify-content: center;
   gap: 20px;
   overflow-x: auto;
+  padding: 2.33em 0;
 }
 
 .offers::-webkit-scrollbar {
@@ -120,7 +121,7 @@ nav > .container {
   }
 
   .offers {
-    padding: 22px;
+    padding: 22px !important;
     justify-content: flex-start;
   }
 
