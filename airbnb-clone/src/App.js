@@ -3,22 +3,27 @@ import React from 'react'
 import Navbar from './components/Navbar'
 // import Hero from './components/Hero'
 import Card from './components/Card'
-import Katie from './assets/katie-zaferes.png'
 
+import { data } from './data'
 
 export default function App() {
+  const offers = data.map(detail => (
+    <Card
+      key={detail.id}
+      title={detail.title}
+      img={detail.coverImg}
+      rating={detail.stats.rating}
+      reviewCount={detail.stats.reviewCount}
+      price={detail.price}
+      location={detail.location}
+      openSpots={detail.openSpots}
+    />
+  ))
+
   return (
     <div>
       <Navbar />
-      {/* <Hero/> */}
-      <Card
-        img={Katie}
-        rating={5.0}
-        reviewCount={6}
-        country="USA"
-        title="Life Lessons with Katie Zaferes"
-        price={136}
-      />
+      <section className="offers">{offers}</section>
     </div>
   )
 }

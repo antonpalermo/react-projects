@@ -48,8 +48,21 @@ nav > .container {
   width: 320px;
 }
 
+.offers {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.offers::-webkit-scrollbar {
+  display: none;
+}
+
 .card {
   max-width: 264px;
+  flex: 0 0 auto;
 }
 
 .card__cover {
@@ -70,6 +83,7 @@ nav > .container {
   padding: 5px 10px;
   border-radius: 2px;
   font-size: 12px;
+  font-weight: 600;
 }
 
 .card__status {
@@ -103,6 +117,11 @@ nav > .container {
     padding: 0 22px;
     margin: 1.98em auto;
     overflow: hidden;
+  }
+
+  .offers {
+    padding: 22px;
+    justify-content: flex-start;
   }
 
   .photo__grid {
