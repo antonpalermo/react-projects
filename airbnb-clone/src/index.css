@@ -1,3 +1,8 @@
+:root {
+  --white: #ffffff;
+  --gray: #918e9b;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -43,9 +48,55 @@ nav > .container {
   width: 320px;
 }
 
+.card {
+  max-width: 264px;
+}
+
+.card__cover {
+  overflow: hidden;
+  position: relative;
+}
+
+.card__cover > .cover {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card__cover > .badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: var(--white);
+  padding: 5px 10px;
+  border-radius: 2px;
+  font-size: 12px;
+}
+
+.card__status {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+
+.gray {
+  color: var(--gray);
+}
+
+.card__status > .star {
+  height: 12px;
+}
+
+.card__text {
+  margin: 0;
+}
+
 @media screen and (max-width: 500px) {
   nav > .container {
     padding: 22px;
+  }
+
+  ..card__cover {
+    max-width: 174px;
   }
 
   .hero-section {
