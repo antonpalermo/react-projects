@@ -1,3 +1,3 @@
 # React Projects
 
-This repository hosts all of React projects that I did while learning react.
+This repo contains projects that I created while doing react tutorials. It's outdated but I will release the updated compiled version of this repo.
